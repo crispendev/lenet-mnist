@@ -17,5 +17,6 @@ def meta():
         "library": "pytorch"
     }
     return make_response(jsonify(meta)), 200
-if __name__ == "__main__":
-    app.run(debug=AppConfig().DEBUG, port=AppConfig().PORT, )
+
+# if __name__ == "__main__":
+#     app.run(debug=AppConfig().DEBUG, port=AppConfig().PORT, )
