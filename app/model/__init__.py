@@ -4,7 +4,6 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 import torch
 from torch import nn 
 from torch.nn import functional as F
-import numpy as np
 from torchvision import transforms
 
 device = torch.device("cpu")
@@ -14,7 +13,11 @@ mean = 0.13066047430038452
 std = 0.30810779333114624 
 classes = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 OUTPUT_DIM = len(classes)
-model_path = os.path.join(os.getcwd(), "model/static/mnist-classifier.pt")
+
+
+model_path = os.path.join(os.getcwd(), "model\\static\\mnist-classifier.pt")
+
+print(os.path.exists(model_path))
 
 class LeNet(nn.Module):
     def __init__(self, output_dim):
