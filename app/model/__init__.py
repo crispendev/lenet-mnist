@@ -14,7 +14,7 @@ std = 0.30810779333114624
 classes = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 OUTPUT_DIM = len(classes)
 
-model_path = os.path.join(os.getcwd(), "app\\model\\static\\mnist-classifier.pt")
+model_path = os.path.join(os.getcwd(), "model\\static\\mnist-classifier.pt")
 
 class LeNet(nn.Module):
     def __init__(self, output_dim):
