@@ -1,6 +1,6 @@
-from api import app
+from app.api import app
 from flask import make_response, jsonify
-from blueprints import blueprint
+from app.blueprints import blueprint
 app.register_blueprint(blueprint, url_prefix="/api")
 
 class AppConfig:
