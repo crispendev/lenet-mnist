@@ -3,9 +3,9 @@ from flask import make_response, jsonify
 from app.blueprints import blueprint
 app.register_blueprint(blueprint, url_prefix="/api")
 
-class AppConfig:
-    PORT = 3001
-    DEBUG = False
+# class AppConfig:
+#     PORT = 3001
+#     DEBUG = False
     
 @app.route('/', methods=["GET"])
 def meta():
