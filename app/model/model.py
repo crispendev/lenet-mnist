@@ -5,7 +5,7 @@ import torch
 from torch import nn 
 from torch.nn import functional as F
 from torchvision import transforms
-from .modelname import name, model_path
+
 
 device = torch.device("cpu")
 
@@ -17,7 +17,7 @@ OUTPUT_DIM = len(classes)
 # model_path = os.path.join("server", os.getcwd(), "model/static/mnist-classifier.pt")
 
 
-# model_path = "mnist-classifier.pt"
+model_name = "static/mnist-classifier.pt"
  
 print("*" * 50)
 print( model_path)

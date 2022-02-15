@@ -1,7 +1,7 @@
 
 from flask import Blueprint, make_response, jsonify, request
 from PIL import Image
-from app.model import model, device, preprocess_img, predict_digit
+from app.model.model import model, device, preprocess_img, predict_digit
 import io
 
 blueprint = Blueprint("blueprint", __name__)
