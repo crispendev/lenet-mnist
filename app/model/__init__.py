@@ -5,6 +5,7 @@ import torch
 from torch import nn 
 from torch.nn import functional as F
 from torchvision import transforms
+from .modelname import name, model_path
 
 device = torch.device("cpu")
 
@@ -15,10 +16,11 @@ OUTPUT_DIM = len(classes)
 
 # model_path = os.path.join("server", os.getcwd(), "model/static/mnist-classifier.pt")
 
-model_path = "mnist-classifier.pt"
+
+# model_path = "mnist-classifier.pt"
  
 print("*" * 50)
-print(os.path.exists(model_path), model_path)
+print( model_path)
 print("*" * 50)
 class LeNet(nn.Module):
     def __init__(self, output_dim):
