@@ -16,11 +16,12 @@ OUTPUT_DIM = len(classes)
 
 # model_path = os.path.join("server", os.getcwd(), "model/static/mnist-classifier.pt")
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-model_path = "static/mnist-classifier.pt"
+model_path = os.path.join(PROJECT_ROOT, "static", "mnist-classifier.pt")
  
 print("*" * 50)
-print( model_path)
+print( model_path, PROJECT_ROOT, os.path.exists(model_path))
 print("*" * 50)
 class LeNet(nn.Module):
     def __init__(self, output_dim):
