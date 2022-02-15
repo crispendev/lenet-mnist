@@ -8,7 +8,6 @@ from torchvision import transforms
 
 device = torch.device("cpu")
 
-
 mean = 0.13066047430038452
 std = 0.30810779333114624 
 classes = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
@@ -16,7 +15,7 @@ OUTPUT_DIM = len(classes)
 
 # model_path = os.path.join("server", os.getcwd(), "model/static/mnist-classifier.pt")
 
-model_path = "static/mnist-classifier.pt"
+model_path = "mnist-classifier.pt"
  
 print("*" * 50)
 print(os.path.exists(model_path), model_path)
